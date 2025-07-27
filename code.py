@@ -38,8 +38,7 @@ svn.fit(X_train, y_train)
 predictions = svn.predict(X_test)
 # Calculate the accuracy
 from sklearn.metrics import accuracy_score
-accuracy_score(y_test, predictions)
-
+print(accuracy_score(y_test, predictions)*100)
 
 # A detailed classification report
 from sklearn.metrics import classification_report
